@@ -19,16 +19,42 @@
 	</div>
 	<div class="container-fluid" id="con-2">
 		<div class="row">
-			<div class="class-md-6">
+			<div class="col-md-6">
 				<h1>YOUR ORDER HERE.</h1>
 				<form>
 					<p><strong>Select Your Pizza Size.</strong></p>
-					<select id="size">
+					<select class="form-control" id="size">
 						<option value="small">Small Ksh. 250</option>
 						<option value="medium">Medium Ksh. 350</option>
 						<option value="large">Large Ksh. 450</option>
 					</select>
+					<br>
+					<p><strong>Select the Crust You would like to have on your pizza.</strong></p>
+					<select class="form-control" id="crust">
+						<option value="crispy">Cripy Ksh. 50</option>
+						<option value="stuffed">Stuffed Ksh. 100</option>
+						<option value="gluten-free">Gluten-free Ksh. 150</option>
+					</select>
+					<br>
+					 <div class="form-group">
+						 <p><strong>Toppings: (Ksh. 50 per topping)</strong></p>
+						 <br><input type="checkbox" name="topping" value="Pepperoni"> Pepperoni.
+						 <br><input type="checkbox" name="topping" value="Sausage"> Sausage.
+						 <br><input type="checkbox" name="topping" value="Ham"> Ham.
+						 <br><input type="checkbox" name="topping" value="Olive"> Black Olives.
+						 <br><input type="checkbox" name="topping" value="Bell"> Bell Pepper.
+						 <br><input type="checkbox" name="topping" value="Pineapple"> Pineapple.
+						 <br><input type="checkbox" name="topping" value="Basil"> Fresh Basil.
+						 <br><input type="checkbox" name="topping" value="Mozarella"> Mozarella Balls.
+					 </div>
+					 <button type="submit" class="btn btn-danger" id="submitPizza">Place Order</button>
 				</form>
+			</div>
+			<div class="col-md-6">
+				<div class="orderSee">
+					<h3>Your Order</h3>
+ 					<h4>Your Total: $<span class="orderTotal"></span></h4>
+				</div>
 			</div>
 		</div>
 	</div>
