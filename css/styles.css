@@ -41,8 +41,13 @@
 	background-attachment: fixed;
 	height: 300px;
 	color: white;
+	text-align: center;
 }
 
 .orderSee #show-pizza{
 	display: none;
+}
+
+#con-4 {
+	text-align: center;
 }
