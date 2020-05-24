@@ -40,6 +40,7 @@
 	background-size: cover;
 	text-align: center;
 	padding-top: 50px;
+	color: white;
 }
 
 #disp {
@@ -121,6 +122,10 @@
 	display: none;
 }
 
+#aboutus {
+	text-align: center;
+	padding-top: 30px;
+}
 #con-4 {
 	text-align: center;
 	background-color: black;
