@@ -21,40 +21,58 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h1>YOUR ORDER HERE.</h1>
-				<form>
+				<form id="pizzaForm">
 					<p><strong>Select Your Pizza Size.</strong></p>
 					<select class="form-control" id="size">
-						<option value="small">Small Ksh. 250</option>
-						<option value="medium">Medium Ksh. 350</option>
-						<option value="large">Large Ksh. 450</option>
+						<option value="250">Small</option>
+						<option value="350">Medium</option>
+						<option value="450">Large</option>
 					</select>
 					<br>
 					<p><strong>Select the Crust You would like to have on your pizza.</strong></p>
 					<select class="form-control" id="crust">
-						<option value="crispy">Cripy Ksh. 50</option>
-						<option value="stuffed">Stuffed Ksh. 100</option>
-						<option value="gluten-free">Gluten-free Ksh. 150</option>
+						<option value="50">Crispy</option>
+						<option value="100">Stuffed</option>
+						<option value="150">Gluten-free</option>
 					</select>
 					<br>
 					 <div class="form-group">
 						 <p><strong>Toppings: (Ksh. 50 per topping)</strong></p>
-						 <br><input type="checkbox" name="topping" value="Pepperoni"> Pepperoni.
-						 <br><input type="checkbox" name="topping" value="Sausage"> Sausage.
-						 <br><input type="checkbox" name="topping" value="Ham"> Ham.
-						 <br><input type="checkbox" name="topping" value="Olive"> Black Olives.
-						 <br><input type="checkbox" name="topping" value="Bell"> Bell Pepper.
-						 <br><input type="checkbox" name="topping" value="Pineapple"> Pineapple.
-						 <br><input type="checkbox" name="topping" value="Basil"> Fresh Basil.
-						 <br><input type="checkbox" name="topping" value="Mozarella"> Mozarella Balls.
+						 <br><input type="checkbox" name="topping" value="50"> Pepperoni.
+						 <br><input type="checkbox" name="topping" value="50"> Sausage.
+						 <br><input type="checkbox" name="topping" value="50"> Ham.
+						 <br><input type="checkbox" name="topping" value="50"> Black Olives.
+						 <br><input type="checkbox" name="topping" value="50"> Bell Pepper.
+						 <br><input type="checkbox" name="topping" value="50"> Pineapple.
+						 <br><input type="checkbox" name="topping" value="50"> Fresh Basil.
+						 <br><input type="checkbox" name="topping" value="50"> Mozarella Balls.
 					 </div>
 					 <button type="submit" class="btn btn-danger" id="submitPizza">Place Order</button>
 				</form>
 			</div>
 			<div class="col-md-6">
-				<div class="orderSee">
-					<h3>Your Order</h3>
- 					<h4>Your Total: $<span class="orderTotal"></span></h4>
-				</div>
+				 <table class="table table-dark">
+                <label id="summ"><strong>Summary</strong></label>
+                <tr>
+                    <td>Size</td>
+                    <td id="sizeP"></td>
+                </tr>
+                <tr>
+                    <td>Crust</td>
+                    <td id="crustP"></td>
+                </tr>
+                <tr>
+                    <td>Toppings</td>
+                    <td id="toppz"></td>
+                </tr>
+                <tr>
+                	<td>Total</td>
+                	<td id="sum"></td>
+                </tr>
+            </table><br>
+            <p>Want delivery? click the button below</p>
+            <button type="button" id="btnAddMore" class="btn btn-warning">Delivery</button><br><br><br>
+            <button type="button" id="btnNuOrder" class="btn btn-warning" value="Reload Page" onClick="document.location.reload(true)">New Order</button>
 			</div>
 		</div>
 	</div>

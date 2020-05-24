@@ -42,3 +42,7 @@
 	height: 300px;
 	color: white;
 }
+
+.orderSee #show-pizza{
+	display: none;
+}
