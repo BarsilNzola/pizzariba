@@ -90,8 +90,10 @@
 }
 
 #aboutus {
+	background-image: url(../images/pizza5.jpg);
 	text-align: center;
 	padding-top: 30px;
+	color: white;
 }
 #con-4 {
 	text-align: center;
