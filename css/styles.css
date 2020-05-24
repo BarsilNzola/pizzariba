@@ -36,45 +36,30 @@
 }
 
 #con-1 {
-	background-color: darkslategray;
+	background-color: black;
 	background-size: cover;
-	background-attachment: fixed;
 	text-align: center;
+	padding-top: 50px;
+}
+
+#disp {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 200px;
+  max-height: 400px;
   margin: auto;
   text-align: center;
 }
 
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
+.avatar {
+	vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 #con-3 {
