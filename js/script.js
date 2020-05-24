@@ -5,7 +5,6 @@ function Pizza(size, crust, total) {
     this.price = 0;
     }
     
-Pizza.prototype.cost = function() {
    $(document).ready(function() {
     $("#submitPizza").click(function(event) {
         event.preventDefault();
