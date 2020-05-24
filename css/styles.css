@@ -36,12 +36,26 @@
 }
 
 #con-1 {
-	background-image: url(../images/pizza3.jpg);
+	background-color: darkslategray;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 300px;
 	color: white;
 	text-align: center;
+}
+
+#con-3 {
+	background-image: url(../images/pizza6.jpg);
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: space-between;
 }
 
 .flip-card {
